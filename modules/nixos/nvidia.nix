@@ -5,7 +5,7 @@
 	};
 
 	# and change this to the module name
-	config = lib.mkIf config.gnome.enable {
+	config = lib.mkIf config.nvidia.enable {
 		  # Enable OpenGL
 		  hardware.opengl = {
 		    enable = true;
@@ -54,5 +54,9 @@
 			persistencedSha256 = lib.fakeSha256;
 		  };	
 		};
+		# Fix instability issues with firefox under wayland causing it to crash
+		environment.sessionVariables = rec {
+			MOZ_ENABLE_WAYLAND = "0";
+		};	
 	};
 }
