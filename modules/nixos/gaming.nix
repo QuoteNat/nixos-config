@@ -9,7 +9,7 @@
 	config = lib.mkIf config.gaming.enable {
 		programs.steam.enable = true;
 		programs.steam.gamescopeSession.enable = true;
-		environment.systemPAckages = with pkgs; [
+		environment.systemPackages = with pkgs; [
 			mangohud
 			protonup
 			protonup-qt
