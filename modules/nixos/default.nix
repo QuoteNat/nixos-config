@@ -4,6 +4,7 @@
 		./gnome.nix
 		./nvidia.nix
 		./gaming.nix
+		./multimedia.nix
 	];
 
 	# settings to enable across all devices
