@@ -13,6 +13,7 @@
 
   gnome.enable = true;
   nvidia.enable = true;
+  gaming.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

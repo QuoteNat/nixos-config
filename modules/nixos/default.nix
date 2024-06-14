@@ -3,6 +3,7 @@
 		./guest-vm.nix
 		./gnome.nix
 		./nvidia.nix
+		./gaming.nix
 	];
 
 	# settings to enable across all devices
