@@ -5,6 +5,8 @@
 		./nvidia.nix
 		./gaming.nix
 		./multimedia.nix
+		./chat.nix
+		./virtualization.nix
 	];
 
 	# settings to enable across all devices

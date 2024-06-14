@@ -15,6 +15,8 @@
   nvidia.enable = true;
   gaming.enable = true;
   multimedia.enable = true;
+  chat.enable = true;
+  virtualization.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
