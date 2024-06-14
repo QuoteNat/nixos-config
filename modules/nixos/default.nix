@@ -14,6 +14,7 @@
 		nerdfonts
 		lsd
 		syncthing #it is possible to start the service via nixconfig, although it would only support a single user
+		keepassxc
 	];
 	
 	services.tailscale.enable = true;
