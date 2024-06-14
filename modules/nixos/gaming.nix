@@ -15,6 +15,7 @@
 			protonup-qt
 			heroic
 			bottles
+			prismlauncher #mc launcher
 		];
 		programs.gamemode.enable = true;
 	};
