@@ -6,7 +6,7 @@
 	};
 
 	# and change this to the module name
-	config = lib.mkIf config.gnome.enable {
+	config = lib.mkIf config.template.enable {
 		# Insert all module settings here
 	};
 }
