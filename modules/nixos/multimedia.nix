@@ -9,7 +9,7 @@
 	config = lib.mkIf config.multimedia.enable {
 		environment.systemPackages = with pkgs; [
 			tauon
-			soundconverter
+			libsForQt5.soundkonverter
 			mpv
 			gthumb
 		];
