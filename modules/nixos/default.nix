@@ -7,6 +7,7 @@
 		./multimedia.nix
 		./chat.nix
 		./virtualization.nix
+		./terminal.nix
 	];
 
 	# settings to enable across all devices
@@ -14,9 +15,6 @@
 	environment.systemPackages = with pkgs; [
 		neovim
 		git
-		zsh
-		nerdfonts
-		lsd
 		syncthing #it is possible to start the service via nixconfig, although it would only support a single user
 		keepassxc
 	];
