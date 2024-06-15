@@ -6,7 +6,14 @@
 
 	config = lib.mkIf config.gnome.enable {
 		services.xserver.enable = true;
-		services.xserver.desktopManager.gnome.enable = true;
+		services.xserver.desktopManager.gnome = {
+    		enable = true;
+      		extraGSettingsOverridePackages = [pkgs.gnome.mutter];
+	        extraGSettingsOverrides = ''
+        		[org.gnome.mutter]
+        		experimental-features=['variable-refresh-rate', 'scale-monitor-framebuffer']
+      		'';
+    		};
 		services.xserver.displayManager.gdm.enable = true;		
 		environment.systemPackages = with pkgs; [
 			gnome-extension-manager
@@ -16,5 +23,6 @@
 			gnomeExtensions.appindicator	
 			gnomeExtensions.caffeine
 		];
+
 	};
 }
