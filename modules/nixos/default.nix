@@ -8,6 +8,7 @@
 		./chat.nix
 		./virtualization.nix
 		./terminal.nix
+		./office.nix
 	];
 
 	# settings to enable across all devices

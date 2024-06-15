@@ -18,6 +18,7 @@
   chat.enable = true;
   virtualization.enable = true;
   terminal.enable = true;
+  office.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
