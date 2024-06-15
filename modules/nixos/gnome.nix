@@ -22,6 +22,7 @@
 			gnomeExtensions.hot-edge
 			gnomeExtensions.appindicator	
 			gnomeExtensions.caffeine
+			adw-gtk3
 		];
 
 	};
