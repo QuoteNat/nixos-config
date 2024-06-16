@@ -19,6 +19,7 @@
   virtualization.enable = true;
   terminal.enable = true;
   office.enable = true;
+	flatpak.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

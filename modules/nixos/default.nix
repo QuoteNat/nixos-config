@@ -9,6 +9,7 @@
 		./virtualization.nix
 		./terminal.nix
 		./office.nix
+		./flatpak.nix
 	];
 
 	# settings to enable across all devices
