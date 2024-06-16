@@ -45,14 +45,7 @@
 		    nvidiaSettings = true;
 
 		    # Optionally, you may need to select the appropriate driver version for your specific GPU.
-		    package = config.boot.kernelPackages.nvidiaPackages.mkDriver {
-		    	version = "555.52.04";
-			sha256_64bit = "sha256-nVOubb7zKulXhux9AruUTVBQwccFFuYGWrU1ZiakRAI=";
-			sha256_aarch64 = lib.fakeSha256;
-			openSha256 = "sha256-PMh5efbSEq7iqEMBr2+VGQYkBG73TGUh6FuDHZhmwHk=";
-			settingsSha256 = "sha256-PMh5efbSEq7iqEMBr2+VGQYkBG73TGUh6FuDHZhmwHk=";
-			persistencedSha256 = lib.fakeSha256;
-		  };	
+		    package = config.boot.kernelPackages.nvidiaPackages.stable;	
 		};
 		# Fix instability issues with firefox under wayland causing it to crash
 		environment.sessionVariables = rec {
