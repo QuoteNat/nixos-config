@@ -12,6 +12,7 @@
 			libreoffice
 			thunderbird
 			kmymoney
+			joplin-desktop
 		];
 	};
 }
