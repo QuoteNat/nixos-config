@@ -16,6 +16,7 @@
 			heroic
 			bottles
 			prismlauncher #mc launcher
+			unstable.vintagestory
 		];
 		programs.gamemode.enable = true;
 	};
