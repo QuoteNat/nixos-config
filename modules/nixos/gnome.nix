@@ -1,4 +1,14 @@
-{ pkgs, lib, config, ...}: {
+{ pkgs, lib, config, ...}: 
+let
+  gnome-extensions = with pkgs.gnomeExtensions; [
+			hot-edge
+			appindicator	
+			caffeine
+      just-perfection
+      alphabetical-app-grid
+    ];
+in
+{
 	options = {
 		gnome.enable =
 			lib.mkEnableOption "Enables GNOME desktop and related software";
@@ -15,19 +25,24 @@
       		'';
     		};
 		services.xserver.displayManager.gdm.enable = true;		
-		environment.systemPackages = with pkgs; [
+		environment.systemPackages = (with pkgs; [
 			gnome-extension-manager
 			gnome.gnome-tweaks
 			pika-backup
-			gnomeExtensions.hot-edge
-			gnomeExtensions.appindicator	
-			gnomeExtensions.caffeine
 			adw-gtk3
       resources
       errands
       metadata-cleaner
       gnome-obfuscate
-		];
-
-	};
+		]) 
+    ++
+    # Gnome extensions
+    (with pkgs.gnomeExtensions; [
+			hot-edge
+			appindicator	
+			caffeine
+      just-perfection
+      alphabetical-app-grid
+    ]);
+  };
 }
