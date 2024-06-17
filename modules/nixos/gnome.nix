@@ -23,6 +23,10 @@
 			gnomeExtensions.appindicator	
 			gnomeExtensions.caffeine
 			adw-gtk3
+      resources
+      errands
+      metadata-cleaner
+      gnome-obfuscate
 		];
 
 	};
