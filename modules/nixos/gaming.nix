@@ -16,6 +16,7 @@
 			heroic
 			bottles
 			prismlauncher #mc launcher
+			cartridges
 		];
 		programs.gamemode.enable = true;
 	};
