@@ -13,6 +13,8 @@
 			thunderbird
 			kmymoney
 			joplin-desktop
+      protonmail-bridge
+      protonmail-desktop
 		];
 	};
 }
