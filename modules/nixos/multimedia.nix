@@ -12,6 +12,7 @@
 			libsForQt5.soundkonverter
 			mpv
 			gthumb
+      newsflash # rss reader
 		];
 	};
 }
