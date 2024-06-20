@@ -19,6 +19,7 @@
 		git
 		syncthing #it is possible to start the service via nixconfig, although it would only support a single user
 		keepassxc
+    nvd # shows changes between nix generations
 	];
 	
 	services.tailscale.enable = true;
