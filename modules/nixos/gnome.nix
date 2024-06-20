@@ -1,13 +1,4 @@
 { pkgs, lib, config, ...}: 
-let
-  gnome-extensions = with pkgs.gnomeExtensions; [
-			hot-edge
-			appindicator	
-			caffeine
-      just-perfection
-      alphabetical-app-grid
-    ];
-in
 {
 	options = {
 		gnome.enable =
@@ -31,7 +22,6 @@ in
 			pika-backup
 			adw-gtk3
       resources
-      errands
       metadata-cleaner
       gnome-obfuscate
 		]) 
