@@ -26,7 +26,6 @@
       gnome-obfuscate
 		]) 
     ++
-    # Gnome extensions
     (with pkgs.gnomeExtensions; [
 			hot-edge
 			appindicator	
