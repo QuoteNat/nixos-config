@@ -74,6 +74,8 @@
     ];
   };
 
+  environment.variables.EDITOR = "nvim";
+
   # Install firefox.
   programs.firefox.enable = true;
 
