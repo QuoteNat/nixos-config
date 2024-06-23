@@ -23,6 +23,15 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  ### Automount secondary HDD
+  # Decrypt the luks partition with a keyfile (example of keyfile generation below):
+  # dd bs=512 count=4 if=/dev/random of=/root/mykeyfile.key iflag=fullblock
+  # chmod 400 /root/mykeyfile.key
+  # cryptsetup luksAddKey /dev/sdb /root/mykeyfile.key
+  environment.etc.crypttab.text = ''
+    cryptstorage UUID=985b2040-d5aa-414e-b42b-133b465ecb22 /root/mykeyfile.key
+  '';
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
